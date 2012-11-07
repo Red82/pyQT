@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>452</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>431</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="leftText"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="buttonBack">
+      <property name="text">
+       <string>&lt;-сюда</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTextEdit" name="rightText"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="buttonForward">
+      <property name="text">
+       <string>туда -&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonForward</sender>
+   <signal>clicked()</signal>
+   <receiver>leftText</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonForward</sender>
+   <signal>clicked()</signal>
+   <receiver>leftText</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonForward</sender>
+   <signal>clicked()</signal>
+   <receiver>rightText</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonForward</sender>
+   <signal>clicked()</signal>
+   <receiver>rightText</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBack</sender>
+   <signal>clicked()</signal>
+   <receiver>rightText</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBack</sender>
+   <signal>clicked()</signal>
+   <receiver>rightText</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBack</sender>
+   <signal>clicked()</signal>
+   <receiver>leftText</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBack</sender>
+   <signal>clicked()</signal>
+   <receiver>leftText</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
